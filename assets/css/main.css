@@ -948,8 +948,8 @@ button {
     #header > :first-child:before {
       display: none; }
   #header .logo {
-    width: 4rem;
-    height: 4rem;
+    width: 5.5rem;
+    height: 5.5rem;
     line-height: 5.5rem; }
     #header .logo .icon:before {
       font-size: 2rem; }
