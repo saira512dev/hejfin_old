@@ -21,7 +21,7 @@
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8rem;
-		font-weight: _font(weight);
+		font-weight: 530;
 		height: _size(element-height);
 		letter-spacing: _font(letter-spacing);
 		line-height: _size(element-height);
@@ -33,11 +33,11 @@
 		white-space: nowrap;
 
 		&:hover {
-			background-color: _palette(border-bg);
+			background-color: rgba(_palette(border-bg),0.4);
 		}
 
 		&:active {
-			background-color: _palette(border-bg-alt);
+			background-color: rgba(_palette(border-bg-alt),0.4);
 		}
 
 		&.icon {

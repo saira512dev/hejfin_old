@@ -29,11 +29,11 @@
 				width: 2.25rem;
 
 				&:hover {
-					background-color: _palette(border-bg);
+					background-color: rgba(_palette(border-bg),0.4);
 				}
 
 				&:active {
-					background-color: _palette(border-bg-alt);
+					background-color: rgba(_palette(border-bg-alt),0.4);
 				}
 			}
 		}

@@ -72,7 +72,7 @@
 		color: _palette(fg-bold);
 		display: block;
 		font-size: 0.8rem;
-		font-weight: _font(weight);
+		font-weight: 550;
 		letter-spacing: _font(letter-spacing);
 		line-height: 1.5;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
@@ -106,9 +106,9 @@
 		}
 
 		&:focus {
-			background: _palette(border-bg);
-			border-color: _palette(fg-bold);
-			box-shadow: 0 0 0 _size(border-width) _palette(fg-bold);
+			background: _palette(clear);
+			border-color: _palette(fg-light);
+			box-shadow: 0 0 0 _size(border-width) _palette(fg-light);
 		}
 	}
 
@@ -122,13 +122,13 @@
 		text-overflow: ellipsis;
 
 		option {
-			color: _palette(fg);
+			color: rgba(_palette(fg),0.2);
 			background: _palette(bg);
 		}
 
 		&:focus {
 			&::-ms-value {
-				background-color: transparent;
+				background-color: _palette(fg-light);
 			}
 		}
 
@@ -149,7 +149,7 @@
 	}
 
 	input[type="checkbox"],
-	input[type="radio"], {
+	input[type="radio"] {
 		@include vendor('appearance', 'none');
 		display: block;
 		float: left;
@@ -204,7 +204,7 @@
 		&:focus + label {
 			&:before {
 				background: _palette(border-bg);
-				border-color: _palette(fg-bold);
+				border-color: _palette(fg-light);
 				box-shadow: 0 0 0 _size(border-width) _palette(fg-bold);
 			}
 		}
